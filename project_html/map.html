@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мой гороод - Ростов на дону</title>
+    <link rel="icon" href="../project_images/smaller_sign.png">
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css">
+    <style>
+        .wrap::before {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            content: '';
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .lead {
+            font-size: 1.175em;
+            font-weight: 300;
+        }
+
+        .uk-logo img {
+            height: 28px;
+        }
+    </style>
+</head>
+<body class="uk-light wrap uk-background-norepeat uk-background-cover uk-background-center-center uk-cover-container uk-background-secondary">
+<img data-srcset="
+		             ../img/main/main600.jpg 640w,
+		             ../img/main/main1000.jpg 1000w,
+		             ../img/main/main2000.jpg 1600w"
+     sizes="100vw"
+     data-src="../img/main/main2000" alt="" data-uk-cover data-uk-img
+>
+<div class=" uk-position-z-index uk-position-relative"
+     data-uk-height-viewport="min-height: 400">
+
+    <!-- NAV -->
+    <div class="uk-position-top">
+        <div class="uk-container uk-container-small">
+            <nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <div class="uk-navbar-item">
+                        <a class="uk-logo" href=""><h2>Мой город</h2></a>
+                    </div>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-visible@m"><a href="main.html" data-uk-icon="home"></a></li>
+                        <li class="uk-visible@s"><a href="history.html">История</a></li>
+                        <li class="uk-visible@s"><a href="attraction_types.html">Достопримечательности</a></li>
+                        <li class="uk-active uk-visible@s"><a href="map.html">Карта</a></li>
+                        <li><a class="uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon
+                               href="#offcanvas-nav"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- /NAV -->
+    <!-- TEXT -->
+    <section class="uk-section">
+        <div class="uk-container uk-text-center"
+             data-uk-scrollspy="target: > .animate; cls: uk-animation-slide-bottom-small uk-invisible; delay: 300">
+            <div class="uk-card uk-card-default">
+                <h3 class="uk-card-title">КАРТА</h3>
+                <div class="uk-card-body">
+                    <div class="uk-flex">
+                        <p class="uk-text-normal uk-margin-medium-right">
+                            КАРТА КАРТА КАРТА
+                        </p>
+                        <div class="uk-animation-toggle uk-margin-small-left">
+                            <div class="uk-animation-fade" style="width: 300px; height: 300px;">
+                                <img style="width: 300px; height: 300px;"
+                                     src="../project_images/museum_detskaya_gallery_small.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /TEXT -->
+    <!-- FOOT -->
+    <div class="uk-position-bottom-center uk-position-small">
+        <span class="uk-text-small uk-text-center">© 2019 | <a href="" title="ЮФУ ФВТ. Школа 92.">ЮФУ ФВТ. Школа 92.</a> | Built with <a
+                href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span
+                data-uk-icon="uikit"></span></a></span>
+    </div>
+    <!-- /FOOT -->
+</div>
+<!-- OFFCANVAS -->
+<div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: false">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+        <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li class="uk-parent">
+                <a href="#">Parent</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="#">Sub item</a></li>
+                    <li><a href="#">Sub item</a></li>
+                </ul>
+            </li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#js-options"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: table"></span>
+                Item</a></li>
+            <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: thumbnails"></span> Item</a>
+            </li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: trash"></span> Item</a></li>
+        </ul>
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+</div>
+<!-- /OFFCANVAS -->
+
+<!-- JS FILES -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
